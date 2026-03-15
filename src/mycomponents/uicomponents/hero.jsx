@@ -1,5 +1,6 @@
 import Threads from "../../components/Threads";
-import SkillsLoop from "../../components/ui/skillsloop";
+// import SkillsLoop from "../../components/ui/skillsloop";
+import SkillsLoop from "../../components/ui/SkillsLoop";
 import ProjectSection from "./projects";
 function Hero() {
   return (
