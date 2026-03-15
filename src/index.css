@@ -1,0 +1,136 @@
+@import "tailwindcss";
+@plugin "daisyui";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+@import "@fontsource-variable/geist";
+/* @keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+
+@keyframes marquee {
+0% {
+transform: translateX(0);
+}
+
+100% {
+transform: translateX(-50%);
+}
+}
+
+
+
+
+
+
+
+
+
+@keyframes expandMenu {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+
+  to {
+    max-height: 500px;
+    opacity: 1;
+  }
+}
+
+.animate-expandMenu {
+  animation: expandMenu 0.4s ease forwards;
+}
+
+
+
+
+
+
+body{
+cursor:none;
+}
+
+.custom-cursor{
+position:fixed;
+width:14px;
+height:14px;
+background:white;
+border-radius:50%;
+pointer-events:none;
+transform:translate(-50%,-50%);
+z-index:9999;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .wave {
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle at 30% 30%, white, transparent 40%),
+              radial-gradient(circle at 70% 60%, white, transparent 40%);
+  filter: blur(120px);
+  animation: moveWave 18s infinite linear;
+}
+
+@keyframes moveWave {
+  0% {
+    transform: translate(-20%, -10%) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(-30%, -20%) rotate(180deg);
+  }
+
+  100% {
+    transform: translate(-20%, -10%) rotate(360deg);
+  }
+} */
+
+
+
+
+/* .custom-cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate3d(-50%, -50%, 0);
+  transition: transform 0.05s linear;
+  z-index: 9999;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
