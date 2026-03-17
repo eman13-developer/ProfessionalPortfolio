@@ -132,7 +132,7 @@ function ProjectSection() {
             ${project.special ? "opacity-0 group-hover:opacity-100" : "opacity-100"}`}
           >
 
-            <span className="px-6 py-3 bg-[#6363634d] text-white rounded-full border border-[#d6d6d6] shadow-[rgba(92,92,92,0.3)_0px_0px_20px_4px]">
+            <span className="px-6 py-2 bg-[#6363634d] text-white rounded-full border border-[#d6d6d6] shadow-[rgba(92,92,92,0.3)_0px_0px_20px_4px]">
               View My Projects →
             </span>
 

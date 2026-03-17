@@ -7,12 +7,11 @@ function Aboutme() {
 
 <section className="text-gray-400 body-font">
 
-<div className="container mx-auto px-6 flex py-24 md:flex-row flex-col-reverse gap-16 items-center">
+<div className="container mx-auto px-9 flex py-20 flex-col-reverse [@media(min-width:1123px)]:flex-row gap-16">
 
 {/* Left Content */}
-<div className="lg:flex-grow md:w-1/2 flex flex-col gap-8 md:text-left text-center">
-
-<h1 className="text-6xl font-semibold text-white">
+<div className="lg:flex-grow w-full [@media(min-width:1123px)]:w-1/2 flex flex-col gap-8 md:text-left text-center">
+<h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold text-white ">
 Meet Eman
 </h1>
 
@@ -64,35 +63,42 @@ Figma
 </div>
 
 </div>
-<div className="border-t border-white/10 pt-8">
+<div className="border-t border-white/10 pt-8 text-white/70 text-left space-y-6">
 
-<div className="grid grid-cols-3 text-white/70 gap-9 text-sm">
+  {/* Row 1 */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
+    <p>Frontend Development</p>
+    <p>React Applications</p>
+    <p>Currently</p>
+  </div>
 
-<p>Frontend Development</p>
-<p>React Applications</p>
-<p>Currently</p>
+  {/* Row 2 */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
+    <p>Responsive Websites</p>
+    <p>Modern UI Design</p>
+    <p>2025-2026</p>
+  </div>
 
-<p>Responsive Websites</p>
-<p>Modern UI Design</p>
-<p>2025-2026</p>
-
-<p>Portfolio Projects</p>
-<p>Personal Learning</p>
-<p>2025-2026</p>
+  {/* Row 3 */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-4 lg:gap-6">
+    <p>Portfolio Projects</p>
+    <p>Personal Learning</p>
+    <p>2025-2026</p>
+  </div>
 
 </div>
 
 </div>
 
-</div>
+<div className="w-full flex justify-center [@media(min-width:1123px)]:w-1/2">
 
-<div className="md:w-1/2 flex justify-center">
-
-<img
-className="h-[520px] w-[500px] object-cover rounded-lg"
-alt="hero"
-src="mine pic.png"
-/>
+  <img
+    className="w-full h-auto object-cover rounded-lg
+    [@media(min-width:1123px)]:w-[600px]
+    [@media(min-width:1123px)]:h-[520px]"
+    alt="hero"
+    src="emanpicc.jpeg"
+  />
 
 </div>
 
