@@ -97,7 +97,7 @@ Figma
     [@media(min-width:1123px)]:w-[600px]
     [@media(min-width:1123px)]:h-[520px]"
     alt="hero"
-    src="emanpicc.jpeg"
+    src="emanpicc.webp"
   />
 
 </div>

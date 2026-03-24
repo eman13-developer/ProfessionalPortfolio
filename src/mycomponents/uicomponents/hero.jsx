@@ -13,11 +13,11 @@ function Hero() {
 
       {/* Background Animation */}
       <div className="absolute inset-0">
-        <Threads
+        {/* <Threads
           amplitude={1}
           distance={0}
           enableMouseInteraction
-        />
+        /> */}
       </div>
 
       {/* Hero Content */}
