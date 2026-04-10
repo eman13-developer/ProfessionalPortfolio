@@ -5,14 +5,49 @@ import Navbar2 from "./mycomponents/common/navbar2"
 import Homepage from "./pages/homepage"
 import './index.css'
 import About from "./pages/about"
-
+import Servicespage from './pages/Servicespage'
+import Testimonialspage from './pages/testimonialpage'
+import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import ContactPage from './mycomponents/uicomponents/contact'
+import Footerpage from './pages/footerpage'
 function App() {
   return (
 <div>
-    <Navbar/>
-    <Homepage/>
-    <About/>
-</div>
+
+ <BrowserRouter>
+
+       {location.pathname !== "/contact" && <Navbar />}
+
+      <Routes>
+
+        {/* ✅ Single Page Portfolio */}
+        <Route
+          path="/"
+          element={
+            <>
+              <section id="home"><Homepage /></section>
+              <section id="about"><About /></section>
+              <section id="services"><Servicespage /></section>
+              <section id="review"><Testimonialspage /></section>
+              
+            </>
+          }
+        />
+
+        {/* ✅ Only Contact is separate */}
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+ {location.pathname !== "/contact" && <Footerpage/>}
+
+    </BrowserRouter>
+
+
+
+
+</div> 
+
+
+
   )
 
 }

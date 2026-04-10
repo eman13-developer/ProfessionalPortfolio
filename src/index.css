@@ -45,6 +45,101 @@ transform: translateX(-50%);
 
 
 
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+
+/* only animation */
+/* forward */
+
+
+
+/* .slider {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slide-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 25s linear infinite;
+}
+.slide {
+  width: 450px;
+  flex-shrink: 0;
+  padding-right: 16px; 
+}
+
+.card {
+  height: 100%;
+  min-height: 350px;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(to bottom, #0d0d0d, transparent);
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+} */
+
+
+
+
+/* ===== CONTAINER ===== */
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ===== TRACK ===== */
+.slide-track {
+  display: flex;
+  width: max-content;
+
+  /* 🔥 smooth infinite */
+  animation: scroll 25s linear infinite;
+}
+
+/* ===== ITEM ===== */
+.slide {
+  min-width: 450px;
+  max-width: 450px;
+  flex-shrink: 0;
+
+  /* 🔥 gap fix (use margin, NOT gap) */
+  margin-right: 16px;
+}
+
+/* ===== CARD ===== */
+.card {
+  height: 100%;
+  min-height: 350px;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(to bottom, #0d0d0d, transparent);
+}
+
+/* ===== ANIMATION ===== */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 
 
@@ -55,3 +150,6 @@ transform: translateX(-50%);
 
 
 
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}

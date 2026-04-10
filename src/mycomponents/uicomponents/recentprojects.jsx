@@ -1,5 +1,5 @@
 import React from "react";
-import { Projects } from "./uicomponents/arrayobjedata/projectsdata";
+import { Projects } from "./arrayobjedata/projectsdata";
 
 function Recentprojects() {
   return (

@@ -1,6 +1,6 @@
 import React from 'react'
 import Aboutme from '../mycomponents/uicomponents/aboutme'
-import Recentprojects from '../mycomponents/recentprojects'
+import Recentprojects from '../mycomponents/uicomponents/recentprojects'
 
 function About() {
   return (

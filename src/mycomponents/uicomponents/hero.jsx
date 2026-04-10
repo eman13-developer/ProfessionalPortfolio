@@ -2,6 +2,7 @@ import Threads from "../../components/Threads";
 // import SkillsLoop from "../../components/ui/skillsloop";
 import SkillsLoop from "../../components/ui/SkillsLoop";
 import ProjectSection from "./projects";
+import TextType from "../../components/TextType";
 function Hero() {
   return (
     <div>
@@ -13,11 +14,7 @@ function Hero() {
 
       {/* Background Animation */}
       <div className="absolute inset-0">
-        {/* <Threads
-          amplitude={1}
-          distance={0}
-          enableMouseInteraction
-        /> */}
+        
       </div>
 
       {/* Hero Content */}
@@ -33,11 +30,26 @@ function Hero() {
           </div>
 
           {/* Heading */}
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+          {/* <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             Hi, I'm <span className="text-white">Eman Fatima</span>
             <br />
             Frontend Developer
-          </h1>
+          </h1> */}
+          <h1 className="text-5xl md:text-6xl font-bold leading-tight whitespace-pre-line">
+  <TextType
+    text={[
+      "Hi, I'm Eman Fatima\nFrontend Developer"
+    ]}
+    typingSpeed={90}       
+    deletingSpeed={80}      
+    pauseDuration={1800}    
+    showCursor={true}
+    cursorCharacter="|"
+    variableSpeedEnabled={true}
+    cursorBlinkDuration={0.8}
+  />
+</h1>
+
 
           {/* Description */}
           <p className="py-6 text-gray-300 max-w-lg mx-auto">
@@ -66,16 +78,27 @@ function Hero() {
       </div>
 
     </div>
-    <div className="w-full ">
+    {/* <div className="w-full ">
       <SkillsLoop />
-    </div>
-
+    </div> */}
+<div className="w-full flex xl:justify-center">
+  <div className="w-full xl:max-w-[1400px]">
+    <SkillsLoop />
+  </div>
+</div>
     {/* Skills loop */}
 <div className="pt-10!">
 <ProjectSection/>
 </div>
   </div>
 </div>
+
+
+
+
+
+
+
   );
 }
 

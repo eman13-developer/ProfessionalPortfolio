@@ -3,7 +3,8 @@ import React, { useState } from "react";
 import { BsStars } from "react-icons/bs";
 import { HiMenuAlt4 } from "react-icons/hi";
 import Navbar2 from "./navbar2";
-
+import { Link as ScrollLink } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
@@ -21,18 +22,23 @@ function Navbar() {
           {/* Links + Button (Desktop) */}
           <div className="hidden md:flex items-center gap-10 cursor-pointer">
 
-            <nav className="flex gap-8 text-white/70 capitalize">
-              <a className="hover:text-white">Services</a>
-              <a className="hover:text-white">Projects</a>
-              <a className="hover:text-white">Testimonials</a>
-              <a className="hover:text-white">Contact</a>
-            </nav>
-
-            <button className="flex items-center gap-2 text-white/70 rounded-full py-2 px-6 border border-white/20 bg-white/10 hover:text-white! transition all ease-in-out duration-300 cursor-pointer">
+<nav className="flex gap-8 text-white/70 capitalize">
+  <ScrollLink to="home" smooth duration={500}>Home</ScrollLink>
+<ScrollLink to="about" smooth duration={500}>About</ScrollLink>
+<ScrollLink to="services" smooth duration={500}>Services</ScrollLink>
+<ScrollLink to="review" smooth duration={500}>Testimonial</ScrollLink>
+</nav>
+            {/* <button className="flex items-center gap-2 text-white/70 rounded-full py-2 px-6 border border-white/20 bg-white/10 hover:text-white! transition all ease-in-out duration-300 cursor-pointer" onClick={ContactPage}>
               <BsStars />
               Get Template
-            </button>
-
+            </button> */}
+<RouterLink
+  to="/contact" target="blank"
+  className="flex items-center gap-2 text-white/70 rounded-full py-2 px-6 border border-white/20 bg-white/10 hover:text-white transition-all duration-300 cursor-pointer"
+>
+  <BsStars />
+  Contact me
+</RouterLink>
           </div>
 
           {/* Mobile Menu Icon */}
