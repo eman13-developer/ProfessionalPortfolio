@@ -7,7 +7,7 @@ import { Link as RouterLink } from "react-router-dom";
 function Navbar2({ closeMenu }) {
   return (
 
-    <div className="fixed inset-0 bg-[#0000009d] text-white z-[9999] flex flex-col overflow-y-auto">
+    <div className="fixed inset-0 bg-black text-white z-[9999] flex flex-col overflow-y-auto">
 
       {/* Top bar */}
       <div className="flex justify-between items-center px-6 py-4">

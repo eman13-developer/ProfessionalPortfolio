@@ -1,7 +1,7 @@
 import React from 'react'
 import { card } from './arrayobjedata/servicescarddata';
-import ServicesSkill from '../../components/ui/servicesloop';
-import Servicesforwardloop from '../../components/ui/servicesforwardloop';
+import ServicesSkill from '../../components/ui/servicesloop'
+import Servicesforwardloop from '../../components/ui/servicesloop'
 function Servicescard() {
   return (
     <div>
@@ -57,7 +57,7 @@ function Servicescard() {
 
   <div className="w-full flex xl:justify-center mt-6">
     <div className="w-full xl:max-w-[1400px]">
-      <Servicesforwardloop />
+      <Servicesforwardloop/>
     </div>
   </div>
 

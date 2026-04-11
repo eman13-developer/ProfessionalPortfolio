@@ -3,7 +3,7 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 @import "@fontsource-variable/geist";
-@keyframes marquee {
+/* @keyframes marquee {
 0% {
 transform: translateX(0);
 }
@@ -53,16 +53,46 @@ transform: translateX(-50%);
     transform: translateX(0%);
   }
 }
-@keyframes marquee-forwars {
+@keyframes marquee-forwards {
   0% {
     transform: translateX(50%);
   }
   100% {
     transform: translateX(0%);
   }
+} */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
-
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.reverse {
+  animation: marquee-reverse 10s linear infinite;
+}
+@keyframes marquee-forwards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.forward {
+  animation: marquee 10s linear infinite;
+}
 
 /* only animation */
 /* forward */
