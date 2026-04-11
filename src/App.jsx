@@ -77,7 +77,7 @@ function App() {
 
         <Routes>
 
-          {/* Single Page Portfolio */}
+    
           <Route path="/" element={
             <>
               <section id="home"><Homepage /></section>

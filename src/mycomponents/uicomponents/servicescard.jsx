@@ -45,17 +45,7 @@ function Servicescard() {
 
       </div>
     </div>
-    {/* <div className='py-5'>
-
-<div className=" ">
-    <ServicesSkill/>
-    </div>
-    <div>
-      <Servicesforwardloop/>
-    </div>
-    </div> */}
-
-
+   
 
     <div className="py-5">
 

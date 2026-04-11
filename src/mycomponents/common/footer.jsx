@@ -8,22 +8,22 @@ function Footer() {
 
       <div className="absolute w-[500px] h-[500px] bg-white/10 blur-[120px] rounded-full top-[-100px] right-[-100px] flex flex-col justify-center items-center"></div>
 
-      {/* Content */}
+      
       <div className="relative z-10 text-center max-w-3xl">
 
-        {/* Status */}
+
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-sm mb-6">
           <span className="w-2 h-2 bg-white rounded-full"></span>
           Available For Work
         </div>
 
-        {/* Heading */}
+        
         <h1 className="text-3xl md:text-5xl font-semibold leading-snug mb-8">
           Curious about what we can create together? <br />
           Let’s bring something extraordinary to life!
         </h1>
 
-        {/* Button */}
+        
     <div className='w-50 flex! items-center justify-center mx-auto'>
 
         <Link
@@ -62,4 +62,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;

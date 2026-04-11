@@ -53,6 +53,14 @@ transform: translateX(-50%);
     transform: translateX(0%);
   }
 }
+@keyframes marquee-forwars {
+  0% {
+    transform: translateX(50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
 
 
 
@@ -118,7 +126,7 @@ transform: translateX(-50%);
   max-width: 450px;
   flex-shrink: 0;
 
-  /* 🔥 gap fix (use margin, NOT gap) */
+
   margin-right: 16px;
 }
 
