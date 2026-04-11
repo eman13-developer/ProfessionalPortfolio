@@ -1,6 +1,6 @@
 import React from 'react'
 import { FaFacebookF, FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { Link as RouterLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { BsStars } from 'react-icons/bs';
 function Footer() {
   return (
@@ -26,13 +26,13 @@ function Footer() {
         {/* Button */}
     <div className='w-50 flex! items-center justify-center mx-auto'>
 
-        <RouterLink
+        <Link
           to="/contact" target="blank"
           className="flex items-center gap-2 text-white/70 rounded-full py-2 px-6 border border-white/20 bg-white/10 hover:text-white transition-all duration-300 cursor-pointer"
           >
           <BsStars />
           Contact me
-        </RouterLink>
+        </Link>
             </div>
         {/* Social Icons */}
         <div className="flex items-center justify-center gap-6 mt-10 text-xl text-white/70">
