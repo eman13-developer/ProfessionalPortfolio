@@ -5,7 +5,7 @@ export const testimonialsdata = [
     role: "Web Developer",
     image: "ahmer.jpeg",
     text: "Eman demonstrates solid frontend development skills with clean component structure and responsive design. Her use of React and Tailwind shows good practical understanding, and she’s steadily improving her debugging abilities.",
-    rating: "5.0",
+    rating: "3.0",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ export const testimonialsdata = [
     role: "Digital Marketer",
     image: "junaid.jpeg",
     text: "Her work aligns well with modern digital trends. The layouts are engaging and user-friendly, which helps in improving user retention and overall conversion potential",
-    rating: "5.0",
+    rating: "2.0",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ export const testimonialsdata = [
     role: "Ui/Ux Designer",
     image: "hamza.jpeg",
     text: "Eman creates visually appealing and modern interfaces. Her sense of color, spacing, and layout is strong, though refining pixel-perfect detailing would elevate her work further",
-    rating: "5.0",
+    rating: "4.0",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ export const testimonialsdata = [
     role: "Digital Markter",
     image: "amna.jpeg",
     text: "Her designs are clean and structured, making them effective for branding and marketing campaigns. She understands how to present content in a way that attracts users.",
-    rating: "5.0",
+    rating: "2.0",
   },
   {
     id: 5,
@@ -37,6 +37,6 @@ export const testimonialsdata = [
     role: "Ui/Ux Designer",
     image: "nany.jpeg",
     text: "Her UI work is elegant and minimalistic. She focuses well on user experience and consistency, and with more attention to micro-details, her designs can reach a professional level.",
-    rating: "5.0",
+    rating: "3.0",
   },
 ]

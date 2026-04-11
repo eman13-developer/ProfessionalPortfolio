@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 function Services() {
   return (
      <div>
@@ -57,25 +58,48 @@ UI/UX Development
 </div>
 
 </div>
+{/* <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row gap-6">
+  <button className="px-6 py-3 text-white text-lg font-medium 
+  bg-black rounded-[11.5px] 
+  border border-white/40
+  shadow-[0_0_12px_rgba(255,255,255,0.25)]">
+    
+    Contact me
+  </button>
+  <button className="px-6 py-3 text-white text-lg font-medium 
+  bg-black rounded-[11.5px] 
+  border border-white/40
+  shadow-[0_0_12px_rgba(255,255,255,0.25)]">
+    
+    See Reviews
+  </button>
+
+</div> */}
+
 <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row gap-6">
 
-  {/* Button 1 */}
-  <button className="px-6 py-3 text-white text-lg font-medium 
-  bg-black rounded-[11.5px] 
-  border border-white/40
-  shadow-[0_0_12px_rgba(255,255,255,0.25)]">
-    
-    Book a Free Call
-  </button>
-  <button className="px-6 py-3 text-white text-lg font-medium 
-  bg-black rounded-[11.5px] 
-  border border-white/40
-  shadow-[0_0_12px_rgba(255,255,255,0.25)]">
-    
-    See Projects
-  </button>
+  {/* Contact Button */}
+ <Link to="home" smooth={true} duration={500}>
+    <button className="px-6 py-3 text-white text-lg font-medium 
+    bg-black rounded-[11.5px] 
+    border border-white/40
+    shadow-[0_0_12px_rgba(255,255,255,0.25)]">
+      View Projects
+    </button>
+  </Link>
+
+  {/* Reviews Button */}
+  <Link to="review" smooth={true} duration={500}>
+    <button className="px-6 py-3 text-white text-lg font-medium 
+    bg-black rounded-[11.5px] 
+    border border-white/40
+    shadow-[0_0_12px_rgba(255,255,255,0.25)]">
+      See Reviews
+    </button>
+  </Link>
 
 </div>
+
 </div>
 <div className="w-screen -mx-9 [@media(min-width:1123px)]:w-1/2 [@media(min-width:1123px)]:mx-0 flex justify-center">
 

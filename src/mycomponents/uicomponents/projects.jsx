@@ -103,12 +103,6 @@ function ProjectSection() {
 
         </div>
 
-        <div>
-          <h1 className="underline text-2xl flex justify-center pt-10">
-            All Projects
-          </h1>
-        </div>
-
       </div>
 
     </div>

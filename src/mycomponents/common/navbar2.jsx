@@ -7,7 +7,7 @@ import { Link as RouterLink } from "react-router-dom";
 function Navbar2({ closeMenu }) {
   return (
 
-    <div className="fixed inset-0 bg-black text-white z-[9999] flex flex-col">
+    <div className="fixed inset-0 bg-[#0000009d] text-white z-[9999] flex flex-col overflow-y-auto">
 
       {/* Top bar */}
       <div className="flex justify-between items-center px-6 py-4">
@@ -37,11 +37,7 @@ function Navbar2({ closeMenu }) {
           Testimonial
         </ScrollLink>
 
-        <RouterLink to="/contact" onClick={closeMenu}>
-          Contact
-        </RouterLink>
-
-        <RouterLink
+        <RouterLink target="blank"
           to="/contact"
           onClick={closeMenu}
           className="flex items-center gap-2 mt-6 px-6 py-3 border border-white/20 rounded-full bg-white/10 hover:bg-white/20 transition-all"

@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { Link } from "react-scroll";
+import { Link as RouterLink } from "react-router-dom";
 function ReviewsSection() {
   return (
     <div className="bg-black overflow-hidden relative min-h-screen py-10">
@@ -49,15 +50,17 @@ function ReviewsSection() {
             {/* BUTTONS */}
             <div className="flex flex-wrap gap-4 mt-4">
 
-              <button className="px-5 sm:px-6 py-2.5 sm:py-3 text-white text-sm sm:text-base font-medium 
-              bg-transparent rounded-xl border border-white/30
-              backdrop-blur-md
-              shadow-[0_0_20px_rgba(255,255,255,0.25)]
-              hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]
-              transition duration-300">
-                Book a Free Call
-              </button>
-
+              <RouterLink to="/contact" target='_blank'>
+  <button className="px-5 sm:px-6 py-2.5 sm:py-3 text-white text-sm sm:text-base font-medium 
+  bg-transparent rounded-xl border border-white/30
+  backdrop-blur-md
+  shadow-[0_0_20px_rgba(255,255,255,0.25)]
+  hover:shadow-[0_0_30px_rgba(255,255,255,0.4)]
+  transition duration-300">
+    Contact me
+  </button>
+</RouterLink>
+            <Link to="services" smooth={true} duration={500}>
               <button className="px-5 sm:px-6 py-2.5 sm:py-3 text-white text-sm sm:text-base font-medium 
               bg-transparent rounded-xl border border-white/30
               backdrop-blur-md
@@ -66,7 +69,7 @@ function ReviewsSection() {
               transition duration-300">
                 See Services
               </button>
-
+            </Link>
             </div>
 
           </div>

@@ -4,9 +4,8 @@ import { Link as RouterLink } from "react-router-dom";
 import { BsStars } from 'react-icons/bs';
 function Footer() {
   return (
-    <footer className="relative bg-black text-white px-6 py-24 flex flex-col items-center justify-center overflow-hidden">
+    <footer className="relative bg-black text-white px-6 py-20 flex flex-col items-center justify-center overflow-hidden sm:pl-10!">
 
-      {/* Background Glow */}
       <div className="absolute w-[500px] h-[500px] bg-white/10 blur-[120px] rounded-full top-[-100px] right-[-100px] flex flex-col justify-center items-center"></div>
 
       {/* Content */}
