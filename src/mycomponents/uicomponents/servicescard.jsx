@@ -8,7 +8,7 @@ function Servicescard() {
 
     <div className="w-full sm:max-w-6xl sm:mx-auto px-0 sm:px-6 py-2">
 
-      <div className="grid lg:grid-cols-2 w-full sm:grid-cols-1 gap-8">
+      <div className="grid lg:grid-cols-2 w-full sm:grid-cols-1 gap-8 bg-black sm:bg-black">
 
         {
           card.map((meracard) => {
@@ -49,7 +49,7 @@ function Servicescard() {
 
     <div className="py-5">
 
-  <div className="w-full flex xl:justify-center">
+  <div className="w-full flex xl:justify-center bg-black sm:bg-black">
     <div className="w-full xl:max-w-[1400px]">
       <ServicesSkill />
     </div>

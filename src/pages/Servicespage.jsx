@@ -4,7 +4,7 @@ import Servicescard from '../mycomponents/uicomponents/servicescard'
 
 function Servicespage() {
   return (
-    <div className='bg-black min-h[300vh]'>
+    <div className='bg-black min-h[400vh]'>
         <Services/>
         <Servicescard/>
     </div>

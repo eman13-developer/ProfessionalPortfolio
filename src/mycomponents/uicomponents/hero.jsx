@@ -28,23 +28,8 @@ function Hero() {
             </span>
           </div>
 
-      
-          {/* <h1 className="text-5xl md:text-6xl font-bold leading-tight whitespace-pre-line">
-  <TextType
-    text={[
-      "Hi, I'm Eman Fatima\nFrontend Developer"
-    ]}
-    typingSpeed={90}       
-    deletingSpeed={80}      
-    pauseDuration={1800}    
-    showCursor={true}
-    cursorCharacter="|"
-    variableSpeedEnabled={true}
-    cursorBlinkDuration={0.8}
-  />
-</h1> */}
 
-<h1 className="text-5xl sm:text-5xl md:text-6xl font-bold leading-tight 
+{/* <h1 className="text-5xl sm:text-5xl md:text-6xl font-bold leading-tight 
 whitespace-pre-line h-[120px] sm:h-[140px] md:h-[170px] overflow-hidden">
 
   <TextType
@@ -54,6 +39,23 @@ whitespace-pre-line h-[120px] sm:h-[140px] md:h-[170px] overflow-hidden">
     typingSpeed={90}
     deletingSpeed={80}
     pauseDuration={1800}
+    showCursor={true}
+    cursorCharacter="|"
+    variableSpeedEnabled={true}
+    cursorBlinkDuration={0.8}
+  />
+
+</h1> */}
+<h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight min-h-[160px]">
+
+  <TextType
+    text={[
+      "Hi, I'm Eman Fatima",
+      "Frontend Developer"
+    ]}
+    typingSpeed={70}
+    deletingSpeed={60}
+    pauseDuration={600}
     showCursor={true}
     cursorCharacter="|"
     variableSpeedEnabled={true}
